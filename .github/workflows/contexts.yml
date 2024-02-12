@@ -3,7 +3,7 @@ name: contextsdemo
 on: push
 
 jobs:
-  echo context data:
+  echo-contextdata:
     runs-on: ubuntu-latest
     steps:
       - name: Display contxt information
