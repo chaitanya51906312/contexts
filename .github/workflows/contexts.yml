@@ -1,6 +1,10 @@
 name: contextsdemo
 
 on: push
+env:
+  # Setting an environment variable with the value of a custom variable
+  env_var: ${{ vars.MY_VAR2 }}
+  
 jobs:
   echo-context:
     runs-on: ubuntu-latest
@@ -15,5 +19,6 @@ jobs:
       - name: Retreive Variables
         run: |
           echo "Variable value: ${{vars.REPOSITORY_VAR}}"
+          echo "Variable value: ${{vars.env_var}}"
     
 
