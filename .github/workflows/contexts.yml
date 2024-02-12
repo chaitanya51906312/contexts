@@ -1,7 +1,6 @@
 name: contextsdemo
 
 on: push
-
 jobs:
   echo-contextdata:
     runs-on: ubuntu-latest
