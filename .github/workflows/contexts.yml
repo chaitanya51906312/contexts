@@ -19,6 +19,6 @@ jobs:
       - name: Retreive Variables
         run: |
           echo "Variable value: ${{vars.REPOSITORY_VAR}}"
-          echo "Variable value: ${{vars.env_var}}"
+          echo "environmentVariable value: ${{env.env_var}}"
     
 
