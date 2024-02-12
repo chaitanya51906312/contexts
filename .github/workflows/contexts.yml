@@ -12,3 +12,8 @@ jobs:
           echo "env: ${{github.env}}"
           echo "Path: ${{github.path}}"
 
+      - name: Retreive Variables
+        run: |
+          echo "Variable value: ${{vars.REPOSITORY_VAR}}"
+    
+
